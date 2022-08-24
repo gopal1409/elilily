@@ -38,9 +38,10 @@ VALUES('John'),('Jane'),('Mary'),('David'),('Amelia');
 INSERT INTO committees(name)
 VALUES('John'),('Mary'),('Amelia'),('Joe');
 ###query with inner join
-select m.member_id
-m.name as member
-c.committee_id
+select 
+m.member_id,
+m.name as member,
+c.committee_id,
 c.name as committee
 from members m
 inner join committees c on c.name=m.name;
