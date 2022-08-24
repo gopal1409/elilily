@@ -20,3 +20,20 @@ select customer_id,sum(amount) as total_spent
 from payment
 group by customer_id
 having sum(amount) > 100
+#########join
+CREATE TABLE members (
+    member_id serial,
+    name VARCHAR(100),
+    PRIMARY KEY (member_id)
+);
+CREATE TABLE committees (
+    committee_id serial,
+    name VARCHAR(100),
+    PRIMARY KEY (committee_id)
+);
+
+INSERT INTO members(name)
+VALUES('John'),('Jane'),('Mary'),('David'),('Amelia');
+
+INSERT INTO committees(name)
+VALUES('John'),('Mary'),('Amelia'),('Joe');
