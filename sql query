@@ -57,3 +57,21 @@ select m.member_id,m.name as member,
 c.committee_id,c.name as committee
 from members m
 left join committees c using(name);
+
+select m.member_id,m.name as member,
+c.committee_id,c.name as committee
+from members m
+left join committees c using(name)
+where c.committee_id is null;
+
+###right join
+select m.member_id,m.name as member,
+c.committee_id,c.name as committee
+from members m
+right join committees c using(name);
+
+select m.member_id,m.name as member,
+c.committee_id,c.name as committee
+from members m
+right join committees c using(name)
+where c.committee_id is null;
