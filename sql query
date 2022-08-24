@@ -88,3 +88,8 @@ select to_char(payment_date,'MONTHYYYY') from payment
 select to_char(payment_date,'mm/dd/yy') from payment
 select to_char(payment_date,'MONTH') from payment
 select distinct(to_char(payment_date,'MONTH'))from payment
+#########math function
+select * from film
+select rental_rate/replacement_cost from film
+select (rental_rate/replacement_cost)*100 from film
+select round(rental_rate/replacement_cost,2)*100 as perecent_cost from film
