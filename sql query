@@ -9,3 +9,14 @@ from payment
 select customer_id,sum(amount) as total_spent
 from payment
 group by customer_id
+
+#####having cant use alias
+select customer_id,sum(amount) as total_spent
+from payment
+group by customer_id
+having total_spent > 100
+
+select customer_id,sum(amount) as total_spent
+from payment
+group by customer_id
+having sum(amount) > 100
