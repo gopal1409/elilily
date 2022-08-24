@@ -75,3 +75,12 @@ c.committee_id,c.name as committee
 from members m
 right join committees c using(name)
 where c.committee_id is null;
+
+
+######date time
+select now()
+select timeofday()
+select current_date
+select extract(year from payment_date)from payment
+select extract(quarter from payment_date)from payment
+select age(payment_date) from payment
