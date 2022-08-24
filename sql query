@@ -1,0 +1,11 @@
+#as clause
+select amount from payment;
+
+select amount as rental_price from payment;
+
+select count(*)as num_transaction
+from payment
+
+select customer_id,sum(amount) as total_spent
+from payment
+group by customer_id
