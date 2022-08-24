@@ -84,3 +84,7 @@ select current_date
 select extract(year from payment_date)from payment
 select extract(quarter from payment_date)from payment
 select age(payment_date) from payment
+select to_char(payment_date,'MONTHYYYY') from payment
+select to_char(payment_date,'mm/dd/yy') from payment
+select to_char(payment_date,'MONTH') from payment
+select distinct(to_char(payment_date,'MONTH'))from payment
