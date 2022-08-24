@@ -93,3 +93,10 @@ select * from film
 select rental_rate/replacement_cost from film
 select (rental_rate/replacement_cost)*100 from film
 select round(rental_rate/replacement_cost,2)*100 as perecent_cost from film
+########string function
+select length(first_name) from customer
+select first_name || last_name from customer
+select first_name ||' '|| last_name from customer
+select lower(first_name) || upper(last_name) from customer
+select first_name || last_name || '@gmail.com' from customer
+select left(first_name,1) || last_name || '@gmail.com' from customer
