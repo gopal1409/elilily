@@ -1,0 +1,15 @@
+drop table COMPANY;
+create table COMPANY(
+ID int primary key not null,
+NAME text not null,
+AGE int not null,
+ADDRESS CHAR(50),
+	SALARY REAL
+);
+create table AUDIT(
+EMP_ID int not null,
+ENTRY_DATE text not null
+);
+insert into COMPANY(ID,NAME,AGE,ADDRESS,SALARY) values(1,'JOhn',32,'California',2000.00;
+select * from company;
+select * from AUDIT;
