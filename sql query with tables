@@ -1,0 +1,105 @@
+Create Table
+ 
+The CREATE TABLE statement is used to create a new table in a database. In that table, if you want to add multiple columns, use the below syntax.
+ 
+Syntax
+CREATE TABLE table_name (  
+    column1 datatype,  
+    column2 datatype,  
+    column3 datatype,  
+   ....  
+);  
+The column parameters specify the names of the columns of the table.
+ 
+The data type parameter specifies the type of data the column can hold (e.g. varchar, integer, date, etc.).
+ 
+Create Table Example
+CREATE TABLE Employee(  
+    EmpId int,  
+    LastName varchar(255),  
+    FirstName varchar(255),  
+    Address varchar(255),  
+    City varchar(255)   
+);  
+The EmpId column is of type int and will hold an integer.
+ 
+The LastName, FirstName, Address, and City columns are of type varchar and will hold characters and the maximum length for these fields is 255 characters.
+ 
+Insert Value in this Table
+ 
+The INSERT INTO statement is used to insert new records in a table.
+ 
+It is possible to write the INSERT INTO statement in two ways.
+ 
+Syntax 
+ 
+The first way specifies both the column names and the values to be inserted.
+ 
+If you are adding values for all the columns of the table, then no need to specify the column names in the SQL query. However, make sure that the order of the values is in the same order as the columns in the table.
+INSERT INTO table_name (column1, column2, column3, ...)  
+VALUES (value1, value2, value3, ...);  
+  
+  '2nd way
+INSERT INTO table_name  
+VALUES (value1, value2, value3, ...);  
+Example
+ 
+Insert value in a 1st way. The column names are used here
+INSERT INTO Employee    (EmpId,LastName,FirstName,ADDRESS,City)
+VALUES (1, 'XYZ', 'ABC', 'India', 'Mumbai' ); 
+  INSERT INTO Employee (EmpId,LastName,FirstName,ADDRESS,City)
+VALUES (2, 'X', 'A', 'India', 'Pune' );
+Insert value in a 2nd way.
+INSERT INTO Employee
+VALUES (3, 'XYZ', 'ABC', 'India', 'Mumbai' );  
+Select Statment in SQL
+ 
+The SELECT statement is used to select data from a database.
+ 
+The data returned is stored in a result table, called the result-set.
+SELECT column1, column2, ...  
+FROM table_name;  
+Here, column1, column2, ... are the field names of the table you want to select from the data. If you want to select all the fields available in the table, use the following syntax: 
+SELECT * FROM table_name;  
+If the above query is executed, then all record is displayed. 
+ 
+Example
+Select EmpId, LastName from Employee;  
+  
+Select * from Employee;  
+Update Table 
+ 
+The UPDATE statement is used to modify the existing records in a table.
+ 
+Syntax 
+UPDATE table_name  
+SET column1 = value1, column2 = value2, ...  
+WHERE condition;  
+Example 
+UPDATE Employee  
+SET FirstName= 'KS', City= 'Pune'  
+WHERE EmpId= 1;  
+If the above query is executed then for EmpId= 1, "Firstname" and "City" column data will be updated. 
+ 
+Update Multiple Rows
+ 
+It is the WHERE clause that determines how many records will be updated. 
+UPDATE Employee
+SET City='Pune'  
+Delete Statment in SQL
+ 
+The DELETE statement is used to delete existing records in a table for a particular Record.
+ 
+Syntax
+DELETE FROM table_name WHERE condition;  
+Example
+DELETE FROM Employee WHERE EmpId=1;  
+In Employee table EmpId = 1 record gets deleted. 
+ 
+Delete All Records
+ 
+It is possible to delete all rows in a table without deleting the table. This means that the table structure, attributes, and indexes will be intact,
+DELETE FROM table_name;    
+    
+DELETE From Employee  ;  
+When the above query is executed, only table Data gets deleted. 
