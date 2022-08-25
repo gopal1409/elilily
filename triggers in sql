@@ -13,3 +13,6 @@ ENTRY_DATE text not null
 insert into COMPANY(ID,NAME,AGE,ADDRESS,SALARY) values(1,'JOhn',32,'California',2000.00;
 select * from company;
 select * from AUDIT;
+####how to add triggers
+create trigger example_trigger after insert on COMPANY
+for each row execute procedure auditlogfunc();
