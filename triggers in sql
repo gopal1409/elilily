@@ -16,3 +16,9 @@ select * from AUDIT;
 ####how to add triggers
 create trigger example_trigger after insert on company for each row
 execute procedure auditlogfunc()
+###how to attach the trigged with table
+create or replace function auditlogfunc() returns trigger as $example_table$
+begin
+  insert into audit(emp_id,entry_date) values (new.ID,current_timestamp);
+end;
+$example_table$ language plpgsql;
