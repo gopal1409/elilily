@@ -48,3 +48,6 @@ creating git global variables.
    55  nano calcy.py
    56  git status
    57  git diff
+  61  git add .
+   62  git commit -m "second commit"
+   63  git log
