@@ -38,3 +38,13 @@ creating git global variables.
    46  git status
    47  history
 
+####modify calcy.py
+ 49  nano calcy.py
+   50  git add .
+   51  git commit -m "first caly program"
+   52  git log
+   53  git status
+   54  cat calcy.py
+   55  nano calcy.py
+   56  git status
+   57  git diff
