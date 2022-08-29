@@ -51,3 +51,6 @@ creating git global variables.
   61  git add .
    62  git commit -m "second commit"
    63  git log
+####password less authentication
+66  ssh-keygen -t rsa
+cat /c/Users/gopal/.ssh/id_rsa.pub
