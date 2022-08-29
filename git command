@@ -26,4 +26,15 @@ creating git global variables.
    31  git status
    32  git log
 
+####.gitignore
+   38  git status
+   39  git add .
+   40  git status
+   41  git reset
+   42  git status
+   43  touch .gitignore
+   44  nano .gitignore
+   45  cat .gitignore
+   46  git status
+   47  history
 
