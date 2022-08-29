@@ -10,3 +10,13 @@ creating git global variables.
    10  touch secret
    11  ls
    12  git status
+   ###how to intialized git repo
+    17  git init
+   18  ls -la
+   19  ls
+   20  git status
+   21  rm -rf .git
+   22  git status
+   23  git init
+   24  git status
+
