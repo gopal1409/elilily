@@ -1,3 +1,12 @@
 creating git global variables. 
 1  git config --global user.name "gopal das"
     2  git config --global user.email "gopal1409@gmail.com"
+####create a dir and add some file
+ 5  mkdir project
+    6  cd project/
+    7  touch DS_Store
+    8  touch calcy.py
+    9  touch auth
+   10  touch secret
+   11  ls
+   12  git status
