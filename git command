@@ -19,4 +19,11 @@ creating git global variables.
    22  git status
    23  git init
    24  git status
+   ###3our first commit
+    28  git add calcy.py
+   29  git status
+   30  git commit -m "intial commit"
+   31  git status
+   32  git log
+
 
