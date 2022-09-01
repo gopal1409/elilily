@@ -1,0 +1,13 @@
+[root@ip-172-31-87-255 ~]# history
+    1  yum install httpd
+    2  systemctl status httpd
+    3  systemctl start httpd
+    4  systemctl status httpd
+    5  history
+    6  clear
+    7  history
+    8  systemctl status httpd
+    9  systemctl enabled httpd
+   10  systemctl enable httpd
+   11  curl localhost
+   12  nano /var/www/html/index.html
