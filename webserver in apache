@@ -11,3 +11,12 @@
    10  systemctl enable httpd
    11  curl localhost
    12  nano /var/www/html/index.html
+   
+   How to host your own website
+   18  cd /var/www/html
+   19  ls
+   20  wget https://www.free-css.com/assets/files/free-css-templates/download/page282/yogasana.zip
+   21  ls
+   22  unzip yogasana.zip
+
+ls
